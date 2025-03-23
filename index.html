@@ -88,6 +88,25 @@
       text-decoration: underline;
     }
 
+    .share-link {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .share-link button {
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .share-link button:hover {
+      background-color: #0d6efd;
+    }
+
     footer {
       background: #000;
       color: #999;
@@ -96,7 +115,7 @@
       font-size: 0.9rem;
     }
 
-    /* ✅ Responsive Mobile Adjustments */
+    /* ✅ Responsive Mobile */
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -180,10 +199,24 @@
       <a href="https://wa.me/40754951373" target="_blank">📱 WhatsApp: +40 754 951 373</a>
       <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">📸 Instagram: @meferrrrrrrrrr</a>
     </div>
+
+    <div class="share-link">
+      <button onclick="copyLink()">🔗 Copiază link-ul site-ului</button>
+      <span id="copyMsg" style="margin-left:10px;"></span>
+    </div>
   </main>
 
   <footer>
     &copy; 2025 Stop-Pariuri. Toate drepturile rezervate.
   </footer>
+
+  <script>
+    function copyLink() {
+      const link = "https://meferrrrrrrrrr.github.io/stop-pariuri/";
+      navigator.clipboard.writeText(link).then(() => {
+        document.getElementById("copyMsg").textContent = "✅ Link copiat!";
+      });
+    }
+  </script>
 </body>
 </html>
