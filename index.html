@@ -14,14 +14,31 @@
     }
 
     header {
-      background: #dc3545;
-      padding: 2rem;
+      background: linear-gradient(to right, #dc3545, #ff6f61);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #ffb347;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    .title {
+      flex: 1;
       text-align: center;
     }
 
-    header h1 {
+    .title h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
 
     main {
@@ -73,7 +90,10 @@
 </head>
 <body>
   <header>
-    <h1>Stop Pariuri</h1>
+    <img src="logo.png" alt="Logo Stop Pariuri" class="logo">
+    <div class="title">
+      <h1>Stop Pariuri</h1>
+    </div>
   </header>
 
   <main>
