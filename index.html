@@ -53,7 +53,30 @@
       background: #e0a800;
     }
 
-    /* Responsive pentru mobil */
+    .copy-link {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #222;
+      border-radius: 10px;
+    }
+
+    .copy-link input {
+      width: 80%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .copy-link button {
+      padding: 0.5rem 1rem;
+      margin-left: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.5rem;
@@ -87,6 +110,12 @@
     <h2>Soluția: Educație & Control</h2>
     <p>Ieși din iluzie. Învață. Controlează-ți bugetul. Vorbește cu alții care au trecut prin asta.</p>
 
+    <div class="copy-link">
+      <p>📎 Distribuie această pagină:</p>
+      <input type="text" value="https://meferrrrrrrrrr.github.io/stop-pariuri/" id="siteLink" readonly />
+      <button onclick="copyLink()">Copiază</button>
+    </div>
+
     <div class="contact">
       <h2>Trimite un mesaj anonim</h2>
       <form action="https://formsubmit.co/nasta.cata@yahoo.com" method="POST">
@@ -97,5 +126,15 @@
       </form>
     </div>
   </main>
+
+  <script>
+    function copyLink() {
+      const copyText = document.getElementById("siteLink");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      alert("Link copiat!");
+    }
+  </script>
 </body>
 </html>
