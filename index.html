@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stop Pariuri – Adevărul despre industrie</title>
   <style>
     body {
@@ -12,147 +13,73 @@
       margin: 0;
       padding: 0;
     }
-
     header {
-      background: linear-gradient(to right, #dc3545, #ff5733);
+      background: #dc3545;
       padding: 2rem;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      color: white;
+      font-size: 2rem;
     }
-
-    header img {
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      border-radius: 50%;
-    }
-
     main {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
+      padding: 2rem;
     }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
     h2 {
       color: #ffc107;
-      font-size: 1.5rem;
     }
-
-    .highlight {
-      font-weight: bold;
-      font-size: 1.3rem;
-      color: #ffcc00;
-    }
-
-    .btn-contact {
-      background: #25d366;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-right: 10px;
-      display: inline-block;
-    }
-
-    .btn-insta {
-      background: #e1306c;
-    }
-
-    .contact-section {
-      text-align: center;
+    .contact {
       margin-top: 3rem;
-    }
-
-    .counter {
+      padding: 2rem;
       background: #222;
-      padding: 1rem;
       border-radius: 10px;
-      margin-top: 2rem;
-      text-align: center;
     }
-
-    .counter p {
-      font-size: 1.1rem;
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: none;
     }
-
-    .counter strong {
-      color: #0f0;
+    .contact button {
+      padding: 0.75rem 2rem;
+      background: #ffc107;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
+    .contact button:hover {
+      background: #e0a800;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo" />
     <h1>Stop Pariuri</h1>
   </header>
-
   <main>
-    <section>
-      <p class="highlight">Hai să vorbim, fără promisiuni false. Doar realitate și soluții.</p>
-      <p>Dacă simți că pariurile îți afectează viața personală sau financiară, e timpul să privești realitatea în față.</p>
-    </section>
+    <h2>Hai să vorbim, fără promisiuni false. Doar realitate și soluții.</h2>
+    <p>Dacă simți că pariurile îți afectează viața personală sau financiară, e timpul să privești realitatea în față.</p>
 
-    <section>
-      <h2>De ce NU câștigi pe termen lung?</h2>
-      <p>Casele de pariuri au întotdeauna avantajul matematic. Chiar și când câștigi, ești tentat să reinvesteești și pierzi totul.</p>
-    </section>
+    <h2>De ce NU câștigi pe termen lung?</h2>
+    <p>Casele de pariuri au întotdeauna avantajul matematic. Chiar și când câștigi, ești tentat să reinvesteești și pierzi totul.</p>
 
-    <section>
-      <h2>Iluzia controlului</h2>
-      <p>Pariurile sportive sunt programate să îți ofere câștiguri ocazionale ca să te țină dependent. Nu controlezi nimic.</p>
-    </section>
+    <h2>Iluzia controlului</h2>
+    <p>Pariurile sunt programate să-ți ofere câștiguri ocazionale ca să te țină dependent. Nu controlezi nimic.</p>
 
-    <section>
-      <h2>Soluția: Educație & Control</h2>
-      <p>În loc să cauți scheme, învață cum funcționează această industrie. Renunță controlat, cere ajutor, setează limite.</p>
-    </section>
+    <h2>Soluția: Educație & Control</h2>
+    <p>Ieși din iluzie. Învață. Controlează-ți bugetul. Vorbește cu alții care au trecut prin asta.</p>
 
-    <div class="counter">
-      <p><strong id="visits">0</strong> oameni au vizitat această pagină.</p>
-      <p><strong id="accepts">0</strong> și-au recunoscut problema.</p>
-      <button onclick="incrementAccept()">Recunosc că am nevoie de ajutor</button>
-    </div>
-
-    <div class="contact-section">
-      <h2>Contactează-mă pentru ajutor real</h2>
-      <a class="btn-contact" href="https://wa.me/40754951373" target="_blank">WhatsApp</a>
-      <a class="btn-contact btn-insta" href="https://instagram.com/meferrrrrrrrrr" target="_blank">Instagram</a>
+    <div class="contact">
+      <h2>Trimite un mesaj anonim</h2>
+      <form action="https://formsubmit.co/nasta.cata@yahoo.com" method="POST">
+        <input type="text" name="subject" placeholder="Subiect (opțional)" />
+        <textarea name="message" placeholder="Scrie mesajul tău..." rows="6" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Trimite</button>
+      </form>
     </div>
   </main>
-
-  <script>
-    let visits = localStorage.getItem("visits") || 0;
-    let accepts = localStorage.getItem("accepts") || 0;
-
-    document.getElementById("visits").textContent = ++visits;
-    document.getElementById("accepts").textContent = accepts;
-
-    localStorage.setItem("visits", visits);
-
-    function incrementAccept() {
-      accepts++;
-      document.getElementById("accepts").textContent = accepts;
-      localStorage.setItem("accepts", accepts);
-    }
-  </script>
-
 </body>
 </html>
