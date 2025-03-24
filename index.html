@@ -93,7 +93,48 @@
       color: #334155;
       font-size: 0.9rem;
     }
-  </style>
+  
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      ul.nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .logo {
+        margin-bottom: 1rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .responsive-stack {
+        flex-direction: column;
+      }
+
+      .responsive-stack > div {
+        width: 100%;
+      }
+
+      section {
+        padding: 1rem 0;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    </style>
 </head>
 <body>
   <header>
@@ -163,7 +204,7 @@
   <h2>Pachete de consiliere</h2>
   <p>Consilierea este 100% confidențială și personalizată. Fiecare sesiune este gândită să te ajute să înțelegi cauza dependenței și cum să ieși din ea.</p>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+  <div class="responsive-stack" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
     <div style="flex: 1; min-width: 250px; background: #fef3c7; padding: 1rem; border-radius: 8px;">
       <h3>🔹 1 ședință</h3>
       <p>Explorăm situația ta și îți ofer un plan personalizat de primă etapă.</p>
