@@ -30,60 +30,81 @@
     h2 {
       color: #ffc107;
     }
-    .contact, .copy-link, .stats {
-      margin-top: 2rem;
+    .section-box {
+      margin: 1.5rem auto;
       padding: 1rem;
       background: #222;
       border-radius: 10px;
+      max-width: 600px;
     }
-    .contact input, .contact textarea, .copy-link input {
-      width: 100%;
-      padding: 0.75rem;
+    .copy-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .copy-link input {
+      width: 80%;
+      padding: 0.5rem;
       margin: 0.5rem 0;
       border-radius: 5px;
       border: none;
     }
-    .contact button, .copy-link button, .stats button {
+    .copy-link button {
+      padding: 0.5rem 1.5rem;
+      background: #28a745;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    .stats button {
       padding: 0.75rem 2rem;
+      background: #17a2b8;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      display: block;
+      margin: 0.5rem auto;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-form textarea, .contact-form input[type="text"] {
+      width: 80%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 0.5rem 1.5rem;
       background: #ffc107;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    .stats button {
-      background: #17a2b8;
-      color: white;
-    }
-    .copy-link button {
-      background: #28a745;
-      color: white;
-      margin-left: 10px;
-    }
-
     footer {
       text-align: center;
       margin: 2rem 0;
     }
-
     .footer-links a {
       margin: 0 10px;
       color: #ccc;
       text-decoration: none;
       font-size: 1rem;
     }
-
     .footer-links a:hover {
       color: #ffc107;
     }
-
     @media (max-width: 600px) {
       main {
         padding: 1rem;
       }
-      .contact, .copy-link, .stats {
-        padding: 1rem;
-      }
-      .contact button, .copy-link button, .stats button {
+      .copy-link input, .contact-form textarea {
         width: 100%;
       }
     }
@@ -95,6 +116,7 @@
       <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo">
     </div>
   </header>
+
   <main>
     <h2>Hai să vorbim, fără promisiuni false. Doar realitate și soluții.</h2>
     <p>Dacă simți că pariurile îți afectează viața personală sau financiară, e timpul să privești realitatea în față.</p>
@@ -108,22 +130,22 @@
     <h2>Soluția: Educație & Control</h2>
     <p>Ieși din iluzie. Învață. Controlează-ți bugetul. Vorbește cu alții care au trecut prin asta.</p>
 
-    <div class="copy-link">
+    <div class="section-box copy-link">
       <p>📎 Distribuie această pagină:</p>
       <input type="text" value="https://meferrrrrrrrrr.github.io/stop-pariuri/" id="siteLink" readonly />
       <button onclick="copyLink()">Copiază</button>
     </div>
 
-    <div class="stats">
+    <div class="section-box stats">
       <p>🧠 <span id="counter">0</span> oameni au recunoscut că au nevoie de ajutor.</p>
       <button onclick="adaugaAsumare()">Recunosc că am nevoie de ajutor</button>
     </div>
 
-    <div class="contact">
+    <div class="section-box contact-form">
       <h2>Trimite un mesaj anonim</h2>
       <form action="https://formsubmit.co/nasta.cata@yahoo.com" method="POST">
         <input type="text" name="subject" placeholder="Subiect (opțional)" />
-        <textarea name="message" placeholder="Scrie mesajul tău..." rows="6" required></textarea>
+        <textarea name="message" placeholder="Scrie mesajul tău..." rows="4" required></textarea>
         <input type="hidden" name="_captcha" value="false">
         <button type="submit">Trimite</button>
       </form>
@@ -145,14 +167,12 @@
       navigator.clipboard.writeText(copyText.value);
       alert("Link copiat!");
     }
-
     function adaugaAsumare() {
       let counter = localStorage.getItem("asumari") || 0;
       counter++;
       localStorage.setItem("asumari", counter);
       document.getElementById("counter").innerText = counter;
     }
-
     window.onload = () => {
       let counter = localStorage.getItem("asumari") || 0;
       document.getElementById("counter").innerText = counter;
