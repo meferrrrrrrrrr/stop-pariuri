@@ -15,12 +15,14 @@
     }
     header {
       background: #dc3545;
-      padding: 2rem;
-      text-align: center;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
     }
     main {
       padding: 2rem;
@@ -28,85 +30,60 @@
     h2 {
       color: #ffc107;
     }
-    .contact {
-      margin-top: 3rem;
-      padding: 2rem;
+    .contact, .copy-link, .stats {
+      margin-top: 2rem;
+      padding: 1rem;
       background: #222;
       border-radius: 10px;
     }
-    .contact input,
-    .contact textarea {
+    .contact input, .contact textarea, .copy-link input {
       width: 100%;
       padding: 0.75rem;
       margin: 0.5rem 0;
       border-radius: 5px;
       border: none;
     }
-    .contact button {
+    .contact button, .copy-link button, .stats button {
       padding: 0.75rem 2rem;
       background: #ffc107;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    .contact button:hover {
-      background: #e0a800;
+    .stats button {
+      background: #17a2b8;
+      color: white;
     }
-
-    .copy-link {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #222;
-      border-radius: 10px;
-    }
-
-    .copy-link input {
-      width: 80%;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-    }
-
     .copy-link button {
-      padding: 0.5rem 1rem;
-      margin-left: 10px;
       background: #28a745;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      margin-left: 10px;
     }
 
-    .stats {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #1c1c1c;
-      border-radius: 10px;
+    footer {
       text-align: center;
+      margin: 2rem 0;
     }
 
-    .stats button {
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #17a2b8;
-      border: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
+    .footer-links a {
+      margin: 0 10px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .footer-links a:hover {
+      color: #ffc107;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
       main {
         padding: 1rem;
       }
-      .contact {
+      .contact, .copy-link, .stats {
         padding: 1rem;
       }
-      .contact button {
+      .contact button, .copy-link button, .stats button {
         width: 100%;
       }
     }
@@ -114,7 +91,9 @@
 </head>
 <body>
   <header>
-    <h1>Stop Pariuri</h1>
+    <div class="logo">
+      <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo">
+    </div>
   </header>
   <main>
     <h2>Hai să vorbim, fără promisiuni false. Doar realitate și soluții.</h2>
@@ -151,6 +130,13 @@
     </div>
   </main>
 
+  <footer>
+    <div class="footer-links">
+      <a href="https://wa.me/40754951373" target="_blank">📱 WhatsApp</a>
+      <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">📸 Instagram</a>
+    </div>
+  </footer>
+
   <script>
     function copyLink() {
       const copyText = document.getElementById("siteLink");
@@ -167,7 +153,6 @@
       document.getElementById("counter").innerText = counter;
     }
 
-    // La încărcare
     window.onload = () => {
       let counter = localStorage.getItem("asumari") || 0;
       document.getElementById("counter").innerText = counter;
