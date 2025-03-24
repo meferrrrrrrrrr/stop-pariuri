@@ -77,6 +77,25 @@
       cursor: pointer;
     }
 
+    .stats {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #1c1c1c;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stats button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #17a2b8;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.5rem;
@@ -116,6 +135,11 @@
       <button onclick="copyLink()">Copiază</button>
     </div>
 
+    <div class="stats">
+      <p>🧠 <span id="counter">0</span> oameni au recunoscut că au nevoie de ajutor.</p>
+      <button onclick="adaugaAsumare()">Recunosc că am nevoie de ajutor</button>
+    </div>
+
     <div class="contact">
       <h2>Trimite un mesaj anonim</h2>
       <form action="https://formsubmit.co/nasta.cata@yahoo.com" method="POST">
@@ -134,6 +158,19 @@
       copyText.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(copyText.value);
       alert("Link copiat!");
+    }
+
+    function adaugaAsumare() {
+      let counter = localStorage.getItem("asumari") || 0;
+      counter++;
+      localStorage.setItem("asumari", counter);
+      document.getElementById("counter").innerText = counter;
+    }
+
+    // La încărcare
+    window.onload = () => {
+      let counter = localStorage.getItem("asumari") || 0;
+      document.getElementById("counter").innerText = counter;
     }
   </script>
 </body>
