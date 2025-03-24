@@ -3,180 +3,120 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stop Pariuri – Adevărul despre industrie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stop Pariuri – Realitate, nu iluzii</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
-      color: #f1f1f1;
+    :root {
+      --primary: #1e3a8a;  /* albastru navy */
+      --accent: #f97316;   /* portocaliu cald */
+      --bg: #f1f5f9;       /* gri-alb soft */
+      --text: #1e293b;     /* gri închis */
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     header {
-      background: #dc3545;
-      padding: 1.5rem;
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
+
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    ul.nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    ul.nav-links li a:hover {
+      color: var(--accent);
+    }
+
     main {
       padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    h2 {
-      color: #ffc107;
+
+    section {
+      margin-bottom: 3rem;
     }
-    .section-box {
-      margin: 1.5rem auto;
-      padding: 1rem;
-      background: #222;
-      border-radius: 10px;
-      max-width: 600px;
+
+    h1, h2 {
+      color: var(--primary);
     }
-    .copy-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .copy-link input {
-      width: 80%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: none;
-    }
-    .copy-link button {
-      padding: 0.5rem 1.5rem;
-      background: #28a745;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      cursor: pointer;
-    }
-    .stats button {
-      padding: 0.75rem 2rem;
-      background: #17a2b8;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      cursor: pointer;
-      display: block;
-      margin: 0.5rem auto;
-    }
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .contact-form textarea, .contact-form input[type="text"] {
-      width: 80%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      border: none;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      padding: 0.5rem 1.5rem;
-      background: #ffc107;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+
     footer {
       text-align: center;
-      margin: 2rem 0;
+      padding: 1rem;
+      background-color: #e2e8f0;
+      color: #334155;
+      font-size: 0.9rem;
     }
-    .footer-links a {
-      margin: 0 10px;
-      color: #ccc;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    .footer-links a:hover {
-      color: #ffc107;
-    }
-    @media (max-width: 600px) {
-      main {
-        padding: 1rem;
-      }
-      .copy-link input, .contact-form textarea {
-        width: 100%;
-      }
-    }
+
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo">
-    </div>
+    <nav>
+      <div class="logo">Stop Pariuri</div>
+      <ul class="nav-links">
+        <li><a href="#acasa">Acasă</a></li>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#resurse">Resurse</a></li>
+        <li><a href="#consiliere">Consiliere</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <h2>Hai să vorbim, fără promisiuni false. Doar realitate și soluții.</h2>
-    <p>Dacă simți că pariurile îți afectează viața personală sau financiară, e timpul să privești realitatea în față.</p>
+    <section id="acasa">
+      <h1>Bine ai venit</h1>
+      <p>Aici începem călătoria spre claritate, control și adevăr în fața jocurilor de noroc.</p>
+    </section>
 
-    <h2>De ce NU câștigi pe termen lung?</h2>
-    <p>Casele de pariuri au întotdeauna avantajul matematic. Chiar și când câștigi, ești tentat să reinvesteești și pierzi totul.</p>
-
-    <h2>Iluzia controlului</h2>
-    <p>Pariurile sunt programate să-ți ofere câștiguri ocazionale ca să te țină dependent. Nu controlezi nimic.</p>
-
-    <h2>Soluția: Educație & Control</h2>
-    <p>Ieși din iluzie. Învață. Controlează-ți bugetul. Vorbește cu alții care au trecut prin asta.</p>
-
-    <div class="section-box copy-link">
-      <p>📎 Distribuie această pagină:</p>
-      <input type="text" value="https://meferrrrrrrrrr.github.io/stop-pariuri/" id="siteLink" readonly />
-      <button onclick="copyLink()">Copiază</button>
-    </div>
-
-    <div class="section-box stats">
-      <p>🧠 <span id="counter">0</span> oameni au recunoscut că au nevoie de ajutor.</p>
-      <button onclick="adaugaAsumare()">Recunosc că am nevoie de ajutor</button>
-    </div>
-
-    <div class="section-box contact-form">
-      <h2>Trimite un mesaj anonim</h2>
-      <form action="https://formsubmit.co/nasta.cata@yahoo.com" method="POST">
-        <input type="text" name="subject" placeholder="Subiect (opțional)" />
-        <textarea name="message" placeholder="Scrie mesajul tău..." rows="4" required></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <button type="submit">Trimite</button>
-      </form>
-    </div>
+    <section id="despre">
+      <h2>Despre proiect</h2>
+      <p>Acest site este un semnal de alarmă pentru cei care cred că pot bate sistemul. Realitatea nu minte, dar promisiunile cazinourilor – da.</p>
+    </section>
   </main>
 
   <footer>
-    <div class="footer-links">
-      <a href="https://wa.me/40754951373" target="_blank">📱 WhatsApp</a>
-      <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">📸 Instagram</a>
-    </div>
+    © 2025 StopPariuri – Educație, Nu Iluzii
   </footer>
-
-  <script>
-    function copyLink() {
-      const copyText = document.getElementById("siteLink");
-      copyText.select();
-      copyText.setSelectionRange(0, 99999);
-      navigator.clipboard.writeText(copyText.value);
-      alert("Link copiat!");
-    }
-    function adaugaAsumare() {
-      let counter = localStorage.getItem("asumari") || 0;
-      counter++;
-      localStorage.setItem("asumari", counter);
-      document.getElementById("counter").innerText = counter;
-    }
-    window.onload = () => {
-      let counter = localStorage.getItem("asumari") || 0;
-      document.getElementById("counter").innerText = counter;
-    }
-  </script>
 </body>
 </html>
