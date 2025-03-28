@@ -11,14 +11,33 @@
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #111;
     }
-    .section, header, footer {
+    header, footer {
+      background-color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
       animation: fadeIn 1.2s ease;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     #toTopBtn {
       display: none;
       position: fixed;
@@ -36,24 +55,47 @@
     #toTopBtn:hover {
       background-color: #222;
     }
-    main {
-      padding: 20px;
+
+    @media (max-width: 768px) {
+      body {
+        padding: 0 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 15px 10px;
+      }
+      section {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+      #toTopBtn {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
     }
   </style>
 </head>
 <body>
-<header class="section">
-  <h1 style="text-align:center;">Stop Pariuri</h1>
+<header>
+  <h1>Stop Pariuri</h1>
 </header>
 <main>
-  <section class="section">
+  <section>
     <h2>Bine ai venit</h2>
-    <p>Acesta este un demo de test pentru îmbunătățiri UI.</p>
+    <p>Acesta este un demo responsive pentru testarea pe mobil. Totul este acum optimizat.</p>
   </section>
 </main>
-<footer class="section" style="text-align:center; padding:20px;">
+<footer>
   <p>&copy; 2025 Stop Pariuri</p>
 </footer>
+
 <button onclick="topFunction()" id="toTopBtn" title="Mergi sus">↑ Sus</button>
 <script>
   let toTopBtn = document.getElementById("toTopBtn");
