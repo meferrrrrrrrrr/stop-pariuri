@@ -12,36 +12,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stop Pariuri – Realitate, nu iluzii</title>
   <style>
-
-/* Modul Zi/Noapte */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-.toggle-dark {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 10px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 6px;
-  background-color: #444;
-  color: white;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode .toggle-dark {
-  background-color: #eee;
-  color: #111;
-}
-
     :root {
       --primary: #1e3a8a;
       --accent: #f97316;
@@ -235,36 +205,6 @@ body {
 </style>
 
 <style>
-
-/* Modul Zi/Noapte */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-.toggle-dark {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 10px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 6px;
-  background-color: #444;
-  color: white;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode .toggle-dark {
-  background-color: #eee;
-  color: #111;
-}
-
 body {
   background: linear-gradient(-45deg, #e0e0e0, #bde0fe, #e0e0e0, #ffffff);
   background-size: 400% 400%;
@@ -279,36 +219,6 @@ body {
 
 
 <style>
-
-/* Modul Zi/Noapte */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-.toggle-dark {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 10px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 6px;
-  background-color: #444;
-  color: white;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode .toggle-dark {
-  background-color: #eee;
-  color: #111;
-}
-
 #typing-effect::after {
   content: '|';
   animation: blink 1s infinite;
@@ -321,36 +231,6 @@ body {
 
 
 <style>
-
-/* Modul Zi/Noapte */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-.toggle-dark {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 10px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 6px;
-  background-color: #444;
-  color: white;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode .toggle-dark {
-  background-color: #eee;
-  color: #111;
-}
-
 /* Efect hover pe butoanele de meniu */
 nav a {
   transition: all 0.3s ease;
@@ -382,36 +262,6 @@ button:active, .btn:active {
 
 
 <style>
-
-/* Modul Zi/Noapte */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-.toggle-dark {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 10px 16px;
-  font-size: 14px;
-  border: none;
-  border-radius: 6px;
-  background-color: #444;
-  color: white;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode .toggle-dark {
-  background-color: #eee;
-  color: #111;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -638,21 +488,6 @@ function typeWriter() {
   }
 }
 window.onload = typeWriter;
-</script>
-
-<button class="toggle-dark" onclick="toggleMode()">🌗 Zi / Noapte</button>
-
-<script>
-  function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
-  }
-
-  window.onload = () => {
-    if (localStorage.getItem("dark-mode") === "true") {
-      document.body.classList.add("dark-mode");
-    }
-  };
 </script>
 
 </body>
