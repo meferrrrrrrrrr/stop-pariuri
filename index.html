@@ -229,6 +229,37 @@ body {
 }
 </style>
 
+
+<style>
+/* Efect hover pe butoanele de meniu */
+nav a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+nav a:hover {
+  color: #d90429;
+  text-shadow: 0 0 5px rgba(217, 4, 41, 0.5);
+}
+
+/* Butoane cu efect de apasare */
+button, .btn {
+  background-color: #d90429;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+button:hover, .btn:hover {
+  transform: scale(1.05);
+  background-color: #a70322;
+}
+button:active, .btn:active {
+  transform: scale(0.97);
+}
+</style>
+
 </head>
 <body>
 
