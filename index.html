@@ -217,8 +217,23 @@ body {
 }
 </style>
 
+
+<style>
+#typing-effect::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+</style>
+
 </head>
 <body>
+
+<h1 id="typing-effect" style="color:white; font-size: 1.8rem; font-weight: bold; margin-top: 20px;"></h1>
+
   <header>
     <nav>
       <div class="logo">
@@ -422,6 +437,20 @@ body {
 <footer style="text-align: center; padding: 1em; background-color: #f1f1f1; font-size: 0.9rem; margin-top: 2em;">
   © 2025 Stop Pariuri. Toate drepturile rezervate.
 </footer>
+
+
+<script>
+const text = "Stop Pariuri – Schimbarea începe aici.";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing-effect").innerHTML = text.substring(0, i + 1);
+    i++;
+    setTimeout(typeWriter, 70);
+  }
+}
+window.onload = typeWriter;
+</script>
 
 </body>
 </html>
