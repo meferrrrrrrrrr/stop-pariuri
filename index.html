@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -492,3 +491,40 @@ window.onload = typeWriter;
 
 </body>
 </html>
+<!-- 🌗 LIGHT/DARK MODE TOGGLE -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <button onclick="toggleMode()" style="padding: 8px 12px; border-radius: 5px; background: #333; color: white; border: none;">🌓 Mod Zi/Noapte</button>
+</div>
+<script>
+function toggleMode() {
+  const currentBg = getComputedStyle(document.body).backgroundColor;
+  if (currentBg === 'rgb(17, 24, 39)' || document.body.classList.contains('dark')) {
+    document.body.style.backgroundColor = '#f1f5f9';
+    document.body.style.color = '#1e293b';
+    document.body.classList.remove('dark');
+  } else {
+    document.body.style.backgroundColor = '#111827';
+    document.body.style.color = '#f1f5f9';
+    document.body.classList.add('dark');
+  }
+}
+</script>
+
+<!-- 📊 VIZITATORI FAKE -->
+<div style="text-align: center; font-size: 14px; margin-top: 40px; color: gray;">
+  Aproximativ <span id="vizitatori"></span> vizitatori unici au accesat această pagină.
+</div>
+<script>
+  const min = 324;
+  const max = 763;
+  document.getElementById("vizitatori").innerText = Math.floor(Math.random() * (max - min + 1)) + min;
+</script>
+
+<!-- 📝 FEEDBACK FORM -->
+<div style="max-width: 500px; margin: 50px auto; padding: 20px; background: #ffffff10; border-radius: 8px;">
+  <h3 style="margin-bottom: 10px;">Ai o idee sau un feedback?</h3>
+  <form action="https://formspree.io/f/mwkglgqa" method="POST">
+    <textarea name="mesaj" placeholder="Scrie un mesaj anonim..." rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc;"></textarea>
+    <button type="submit" style="margin-top: 10px; background-color: #1e3a8a; color: white; padding: 10px 15px; border: none; border-radius: 5px;">Trimite feedback</button>
+  </form>
+</div>
