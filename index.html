@@ -267,40 +267,6 @@ html {
 }
 </style>
 
-
-<style>
-  .mode-toggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 12px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  body.dark-mode header,
-  body.dark-mode footer,
-  body.dark-mode nav {
-    background-color: #1e1e1e;
-  }
-
-  body.dark-mode .box,
-  body.dark-mode .faq-item,
-  body.dark-mode .testimonial {
-    background-color: #2a2a2a;
-    border-color: #444;
-  }
-</style>
-
 </head>
 <body>
 
@@ -522,25 +488,6 @@ function typeWriter() {
   }
 }
 window.onload = typeWriter;
-</script>
-
-
-<button id="mode-toggle" class="mode-toggle" title="Comută modul zi/noapte">🌗</button>
-
-
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-  });
-
-  // Apply theme on load
-  window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-mode');
-    }
-  });
 </script>
 
 </body>
