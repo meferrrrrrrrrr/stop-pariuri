@@ -205,72 +205,54 @@
 </style>
 
 <style>
-body {
-  background: linear-gradient(-45deg, #e0e0e0, #bde0fe, #e0e0e0, #ffffff);
-  background-size: 400% 400%;
-  animation: gradientBG 20s ease infinite;
+/* Loader */
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 9999;
 }
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-</style>
-
-
-<style>
-#typing-effect::after {
-  content: '|';
-  animation: blink 1s infinite;
-}
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-</style>
-
-
-<style>
-/* Efect hover pe butoanele de meniu */
-nav a {
-  transition: all 0.3s ease;
-  position: relative;
-}
-nav a:hover {
-  color: #d90429;
-  text-shadow: 0 0 5px rgba(217, 4, 41, 0.5);
+body.loaded #loader {
+  display: none;
 }
 
-/* Butoane cu efect de apasare */
-button, .btn {
-  background-color: #d90429;
-  color: white;
-  padding: 10px 20px;
+/* Light/Dark Mode */
+body.light-mode {
+  background-color: #f7f7f7;
+  color: #222;
+}
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+#toggle-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: transparent;
   border: none;
-  font-weight: bold;
+  font-size: 24px;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
-button:hover, .btn:hover {
-  transform: scale(1.05);
-  background-color: #a70322;
-}
-button:active, .btn:active {
-  transform: scale(0.97);
 }
 </style>
 
 
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>
+<!-- AOS Animation -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
-<body>
+<body class='dark-mode'>
 
-<h1 id="typing-effect" style="color:#d90429; font-size: 1.8rem; font-weight: bold; margin-top: 20px;"></h1>
+<!-- Loader -->
+<div id="loader">Se încarcă...</div>
+<button id="toggle-mode" onclick="toggleMode()">🌙</button>
 
   <header>
     <nav>
@@ -280,12 +262,12 @@ html {
       </div>
       <ul class="nav-links">
         <li><a href="#acasa">Acasă</a></li>
-        <li><a href="#despre">ℹ️ Despre</a></li>
-        <li><a href="#resurse">📚 Resurse</a></li>
-        <li><a href="#consiliere">🧠 Consiliere</a></li>
-        <li><a href="#pachete">📦 Pachete</a></li>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#resurse">Resurse</a></li>
+        <li><a href="#consiliere">Consiliere</a></li>
+        <li><a href="#pachete">Pachete</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -402,7 +384,7 @@ html {
 
 <section id="contact">
 
-  <h2>📞 Contact</h2>
+  <h2>Contact</h2>
   <p>Dacă ai nevoie de ajutor sau vrei să vorbim direct, mă poți contacta oricând:</p>
   <ul style="list-style: none; padding-left: 0;">
     <li>📱 Telefon / WhatsApp: <a href="https://wa.me/40754951373" target="_blank">+40 754 951 373</a></li>
@@ -411,30 +393,30 @@ html {
 </section>
 
   
-<section id="testimoniale" style="padding: 40px 20px; background-color: #f9f9f9;">
-  <h2 style="text-align: center; margin-bottom: 30px;">Ce spun oamenii</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Nu credeam că pot scăpa de pariuri. Acum mă simt liber. Mulțumesc pentru tot sprijinul!”</p>
-      <p style="text-align: right; font-weight: bold;">– Andrei</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Mi-ați deschis ochii! N-am mai pus niciun bilet de 3 luni. Viața mea s-a schimbat.”</p>
-      <p style="text-align: right; font-weight: bold;">– Mihai</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Ajutor real. Fără promisiuni false. Doar fapte. Recomand din inimă!”</p>
-      <p style="text-align: right; font-weight: bold;">– Cristina</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„E prima dată când cineva chiar înțelege ce simt și nu mă judecă.”</p>
-      <p style="text-align: right; font-weight: bold;">– Raul</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Site-ul ăsta m-a ajutat mai mult decât orice altceva. Mulțumesc!”</p>
-      <p style="text-align: right; font-weight: bold;">– Elena</p>
-    </div>
+<section id="testimoniale" class="section">
+  <h2>Testimoniale</h2>
+  <div class="testimonial">
+    <p>„Am încercat de zeci de ori să mă las de pariuri. Doar aici am simțit în sfârșit că cineva chiar mă înțelege.”</p>
+    <span>— Alex, 32 ani</span>
   </div>
+  <div class="testimonial">
+    <p>„Am reușit să pun STOP după ani de zile. Nu e ușor, dar acum știu că e posibil.”</p>
+    <span>— Daniel, 28 ani</span>
+  </div>
+</section>
+
+
+<section><p>👁️‍🗨️ Peste <strong id="visitor-count"></strong> vizitatori au accesat pagina.</p></section>
+
+
+<section id="feedback" data-aos="fade-up">
+  <h2>🗣️ Feedback-ul tău contează!</h2>
+  <p>Ce părere ai despre site?</p>
+  <div>
+    ⭐ ⭐ ⭐ ⭐ ⭐
+  </div>
+  <textarea rows="4" cols="40" placeholder="Scrie un mesaj anonim..."></textarea><br>
+  <button>Trimite</button>
 </section>
 
 </main>
@@ -478,16 +460,25 @@ html {
 
 
 <script>
-const text = "Stop pariuri - Escape the matrix like a mefer";
-let i = 0;
-function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("typing-effect").innerHTML = text.substring(0, i + 1);
-    i++;
-    setTimeout(typeWriter, 70);
-  }
+AOS.init();
+
+// Loader logic
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
+// Dark/Light mode toggle
+function toggleMode() {
+  document.body.classList.toggle('light-mode');
+  document.body.classList.toggle('dark-mode');
 }
-window.onload = typeWriter;
+
+// Fake visitor counter
+let visitorNum = 257 + Math.floor(Math.random() * 40);
+document.addEventListener('DOMContentLoaded', () => {
+  const counter = document.getElementById("visitor-count");
+  if (counter) counter.innerText = visitorNum;
+});
 </script>
 
 </body>
