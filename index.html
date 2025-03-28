@@ -490,5 +490,19 @@ function typeWriter() {
 window.onload = typeWriter;
 </script>
 
+
+<!-- START: Contor de vizitatori -->
+<div id="visitor-counter" style="text-align: center; margin-top: 20px; font-size: 16px; color: white;">
+    Vizitatori pe site: <span id="visitor-count">...</span>
+</div>
+<script>
+    // Simulăm un număr de vizitatori random (între 100 și 999)
+    document.addEventListener("DOMContentLoaded", function() {
+        let vizitatori = Math.floor(100 + Math.random() * 900);
+        document.getElementById("visitor-count").innerText = vizitatori;
+    });
+</script>
+<!-- END: Contor de vizitatori -->
+
 </body>
 </html>
