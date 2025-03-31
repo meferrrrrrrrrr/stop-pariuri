@@ -203,6 +203,57 @@
   color: #222;
 }
 
+
+<style>
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1e3a8a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .nav-dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+
+  .nav-dropdown a:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+</style>
+
 </style>
 
 <style>
@@ -288,6 +339,23 @@ html {
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">📞 Contact</a></li>
       </ul>
+
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="nav-dropdown" id="nav-dropdown">
+  <a href="#acasa">Acasă</a>
+  <a href="#despre">Despre</a>
+  <a href="#resurse">Resurse</a>
+  <a href="#consiliere">Consiliere</a>
+  <a href="#pachete">Pachete</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
     </nav>
   </header>
 
@@ -347,6 +415,23 @@ html {
     <li>🔹 Fără judecată. Fără promisiuni false. Doar adevăr și fapte</li>
     <li>🔹 Ghidare 1-la-1 prin mesaje sau apel, dacă vrei</li>
   </ul>
+
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="nav-dropdown" id="nav-dropdown">
+  <a href="#acasa">Acasă</a>
+  <a href="#despre">Despre</a>
+  <a href="#resurse">Resurse</a>
+  <a href="#consiliere">Consiliere</a>
+  <a href="#pachete">Pachete</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
   <p style="margin-top:1rem;">💬 Scrie-mi oricând pe <a href="https://wa.me/40754951373" target="_blank">WhatsApp</a> sau pe <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">Instagram</a>.</p>
 </section>
 
@@ -423,6 +508,23 @@ html {
     <li>📱 Telefon / WhatsApp: <a href="https://wa.me/40754951373" target="_blank">+40 754 951 373</a></li>
     <li>📸 Instagram: <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">@meferrrrrrrrrr</a></li>
   </ul>
+
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="nav-dropdown" id="nav-dropdown">
+  <a href="#acasa">Acasă</a>
+  <a href="#despre">Despre</a>
+  <a href="#resurse">Resurse</a>
+  <a href="#consiliere">Consiliere</a>
+  <a href="#pachete">Pachete</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
 </section>
 
   
@@ -591,6 +693,22 @@ window.onload = typeWriter;
     const loader = document.getElementById("loader-wrapper");
     if (loader) {
       loader.style.display = "none";
+    }
+  });
+</script>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const dropdown = document.getElementById('nav-dropdown');
+
+  hamburger.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!hamburger.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = 'none';
     }
   });
 </script>
