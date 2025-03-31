@@ -367,6 +367,24 @@ html {
 </head>
 <body>
 
+<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1001; display: flex; justify-content: space-between; align-items: center; background-color: rgba(0, 0, 0, 0.8); padding: 10px 20px; backdrop-filter: blur(10px);">
+  <div id="logo-menu-trigger" style="display: flex; align-items: center; cursor: pointer;">
+    <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">
+    <span style="color: white; font-weight: bold; font-size: 1.1rem;">Stop Pariuri</span>
+  </div>
+</header>
+
+<div class="dropdown-menu" id="dropdownMenu" style="display: none; position: fixed; top: 60px; right: 20px; background-color: rgba(30, 58, 138, 0.95); backdrop-filter: blur(10px); border-radius: 8px; padding: 10px 20px; z-index: 1000;">
+  <a href="#acasa">Acasă</a>
+  <a href="#despre">Despre</a>
+  <a href="#resurse">Resurse</a>
+  <a href="#consiliere">Consiliere</a>
+  <a href="#pachete">Pachete</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
 
 
 <div class="dropdown-menu" id="dropdownMenu">
@@ -741,6 +759,22 @@ window.onload = typeWriter;
     const toggle = document.querySelector('.menu-toggle');
     if (!menu.contains(event.target) && !toggle.contains(event.target)) {
       menu.style.display = 'none';
+    }
+  });
+</script>
+
+
+<script>
+  const logoMenuTrigger = document.getElementById('logo-menu-trigger');
+  const dropdown = document.getElementById('dropdownMenu');
+
+  logoMenuTrigger.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!logoMenuTrigger.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = 'none';
     }
   });
 </script>
