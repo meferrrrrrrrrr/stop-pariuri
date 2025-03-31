@@ -203,102 +203,6 @@
   color: #222;
 }
 
-
-<style>
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-  }
-
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    border-radius: 3px;
-    transition: 0.3s;
-  }
-
-  .nav-dropdown {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #1e3a8a;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-
-  .nav-dropdown a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-    font-weight: bold;
-  }
-
-  .nav-dropdown a:hover {
-    color: var(--accent);
-  }
-
-  @media (max-width: 768px) {
-    
-
-    .hamburger {
-      display: flex;
-    }
-  }
-
-<style>
-  .menu-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #ffffff;
-    color: #111;
-    padding: 8px 14px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1001;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-  }
-
-  .menu-toggle:hover {
-    background-color: #f97316;
-    color: white;
-  }
-
-  .dropdown-menu {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    background-color: rgba(30, 58, 138, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    padding: 10px 20px;
-    z-index: 1000;
-  }
-
-  .dropdown-menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-    font-weight: bold;
-  }
-
-  .dropdown-menu a:hover {
-    color: var(--accent);
-  }
-</style>
-
-</style>
-
 </style>
 
 <style>
@@ -367,38 +271,6 @@ html {
 </head>
 <body>
 
-<nav style="position: fixed; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;">
-  <ul class="nav-links" style="display: flex; justify-content: center; list-style: none; margin: 0; padding: 1rem; gap: 2rem;">
-    <li><a href="#acasa" style="color: white; text-decoration: none;">Acasă</a></li>
-    <li><a href="#despre" style="color: white; text-decoration: none;">Despre</a></li>
-    <li><a href="#resurse" style="color: white; text-decoration: none;">Resurse</a></li>
-    <li><a href="#consiliere" style="color: white; text-decoration: none;">Consiliere</a></li>
-    <li><a href="#pachete" style="color: white; text-decoration: none;">Pachete</a></li>
-    <li><a href="#faq" style="color: white; text-decoration: none;">FAQ</a></li>
-    <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
-  </ul>
-</nav>
-
-
-<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1001; display: flex; justify-content: space-between; align-items: center; background-color: rgba(0, 0, 0, 0.8); padding: 10px 20px; backdrop-filter: blur(10px);">
-  <div id="logo-menu-trigger" style="display: flex; align-items: center; cursor: pointer;">
-    <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">
-    <span style="color: white; font-weight: bold; font-size: 1.1rem;">Stop Pariuri</span>
-  </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <h1 id="typing-effect" style="color:#ffffff; background-color:#000; padding:10px; text-align:center; font-size: 1.8rem; font-weight: bold; margin-top: 20px;"></h1>
 
   <header>
@@ -407,33 +279,25 @@ html {
         <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo" />
         <span>Stop Pariuri</span>
       </div>
-      
-
-
-
-
+      <ul class="nav-links">
+        <li><a href="#acasa">Acasă</a></li>
+        <li><a href="#despre">ℹ️ Despre</a></li>
+        <li><a href="#resurse">📚 Resurse</a></li>
+        <li><a href="#consiliere">🧠 Consiliere</a></li>
+        <li><a href="#pachete">📦 Pachete</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">📞 Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    
-<!-- HERO SECTION NOUĂ -->
-
-<!-- HERO SECTION CU VIDEO -->
-
-<!-- HERO SECTION CU VIDEO SI TEXT -->
-
-<section id="acasa" style="position: relative; height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; text-align: center;">
-  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-    <source src="https://cdn.coverr.co/videos/coverr-man-walking-under-a-bridge-4289/1080p.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <h1 id="typing-effect" style="color:#ffffff; background-color:#000; padding:10px; text-align:center; font-size: 1.8rem; font-weight: bold; margin-top: 20px;"></h1>
-</section>
-
-
-
-
+    <section id="acasa">
+      <h1>Ai ajuns unde trebuie.</h1>
+      <p>Nu e o platformă care îți promite câștiguri rapide. E o pagină sinceră. Un semnal de alarmă pentru cei care simt că jocurile de noroc le controlează viața.</p>
+      <p>Fie că ai pierdut bani, timp sau încredere în tine – aici nu te judecă nimeni.</p>
+      <a href="#despre" style="display:inline-block;margin-top:1rem;padding:0.5rem 1rem;background-color:#f97316;color:white;text-decoration:none;border-radius:4px;">Află mai multe</a>
+    </section>
 
     <section id="despre">
       <h2>Despre proiect</h2>
@@ -469,10 +333,6 @@ html {
     <li>🔹 Fără judecată. Fără promisiuni false. Doar adevăr și fapte</li>
     <li>🔹 Ghidare 1-la-1 prin mesaje sau apel, dacă vrei</li>
   </ul>
-
-
-
-
   <p style="margin-top:1rem;">💬 Scrie-mi oricând pe <a href="https://wa.me/40754951373" target="_blank">WhatsApp</a> sau pe <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">Instagram</a>.</p>
 </section>
 
@@ -549,10 +409,6 @@ html {
     <li>📱 Telefon / WhatsApp: <a href="https://wa.me/40754951373" target="_blank">+40 754 951 373</a></li>
     <li>📸 Instagram: <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">@meferrrrrrrrrr</a></li>
   </ul>
-
-
-
-
 </section>
 
   
@@ -596,13 +452,134 @@ html {
     © 2025 StopPariuri – Educație, Nu Iluzii
   </footer>
 
-  
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script>
+
+<!-- 🛡️ Disclaimer legal -->
+<section id="disclaimer" style="padding: 2em; background-color: #f9f9f9; border-top: 1px solid #ddd;">
+  <h2>📌 Notă legală</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Acest site oferă sprijin și îndrumare educativă persoanelor care vor să se lase de pariuri. Nu este un serviciu medical sau psihologic profesionist. Informațiile de aici nu înlocuiesc sfatul unui specialist acreditat.
+  </p>
+</section>
+
+<!-- 📄 Termeni și condiții -->
+<section id="termeni" style="padding: 2em; background-color: #ffffff; border-top: 1px solid #ddd;">
+  <h2>📄 Termeni și condiții</h2>
+  <p style="font-size: 1rem; line-height: 1.5;">
+    Prin utilizarea acestui site, ești de acord că informațiile oferite sunt strict cu scop educativ și de conștientizare. Nu ne asumăm responsabilitatea pentru deciziile financiare sau personale ale utilizatorilor.
+  </p>
+</section>
+
+<!-- ⚖️ Copyright -->
+<footer style="text-align: center; padding: 1em; background-color: #f1f1f1; font-size: 0.9rem; margin-top: 2em;">
+  © 2025 Stop Pariuri. Toate drepturile rezervate.
+</footer>
 
 
+<script>
+const text = "Stop Pariuri - Escape the matrix, be the change.";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing-effect").innerHTML = text.substring(0, i + 1);
+    i++;
+    setTimeout(typeWriter, 70);
+  }
+}
+window.onload = typeWriter;
+</script>
 
 
+<!-- FOOTER PERSONALIZAT -->
+<footer style="background-color:#111; color:#fff; text-align:center; padding:20px; margin-top:60px; font-size:14px;">
+    <p><strong>Disclaimer:</strong> Acest site oferă sprijin educativ pentru renunțarea la pariuri. Nu oferim servicii medicale sau psihologice profesioniste.</p>
+    <p>&copy; 2025 Stop Pariuri. Toate drepturile rezervate.</p>
+</footer>
 
 
+<!-- BACK TO TOP BUTTON -->
+<button onclick="scrollToTop()" id="backToTopBtn" title="Înapoi sus">⬆️</button>
+<style>
+  #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #backToTopBtn:hover {
+    background-color: #b71c1c;
+  }
+</style>
+<script>
+  const btn = document.getElementById("backToTopBtn");
+  window.onscroll = () => {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+
+<!-- LOADER LA INTRAREA PE SITE -->
+<style>
+  #loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #d62828;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+<div id="loader-wrapper"><div class="loader"></div></div>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader-wrapper");
+    if (loader) {
+      loader.style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>
