@@ -222,6 +222,52 @@
   section {
     scroll-margin-top: 100px;
   }
+
+<style>
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 128, 0.95);
+    z-index: 1000;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+  }
+
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      justify-content: flex-start;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0.5rem;
+    }
+  }
+</style>
+
 </style>
 
 </style>
@@ -300,21 +346,19 @@ html {
 <h1 id="typing-effect" style="color:#ffffff; background-color:#000; padding:40px 20px; text-align:center; font-size: 2rem; font-weight: bold; margin: 0;"></h1>
 
   <header>
-    <nav>
-      <div class="logo">
-        <img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="Logo" />
-        <span>Stop Pariuri</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#acasa">Acasă</a></li>
-        <li><a href="#despre">ℹ️ Despre</a></li>
-        <li><a href="#resurse">📚 Resurse</a></li>
-        <li><a href="#consiliere">🧠 Consiliere</a></li>
-        <li><a href="#pachete">📦 Pachete</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
-      </ul>
-    </nav>
+    
+<nav>
+  <ul class="nav-links">
+    <li><a href="#acasa">🏠 Acasă</a></li>
+    <li><a href="#despre">ℹ️ Despre</a></li>
+    <li><a href="#resurse">📚 Resurse</a></li>
+    <li><a href="#consiliere">🧠 Consiliere</a></li>
+    <li><a href="#pachete">📦 Pachete</a></li>
+    <li><a href="#faq">❓ FAQ</a></li>
+    <li><a href="#contact">📞 Contact</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
