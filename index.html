@@ -508,21 +508,7 @@ html {
     © 2025 StopPariuri – Educație, Nu Iluzii
   
 <div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
-  Vizitatori azi: <span id="visitor-count">...</span>
-</div>
-
-<script>
-  const startCount = 50;
-  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10); // pe zi
-  let count = localStorage.getItem(key);
-  if (!count) {
-    count = startCount;
-  } else {
-    count = parseInt(count) + 1;
-  }
-  localStorage.setItem(key, count);
-  document.getElementById("visitor-count").innerText = count;
-</script>
+  
 
 </footer>
 
@@ -559,21 +545,7 @@ html {
   © 2025 Stop Pariuri. Toate drepturile rezervate.
 
 <div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
-  Vizitatori azi: <span id="visitor-count">...</span>
-</div>
-
-<script>
-  const startCount = 50;
-  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10); // pe zi
-  let count = localStorage.getItem(key);
-  if (!count) {
-    count = startCount;
-  } else {
-    count = parseInt(count) + 1;
-  }
-  localStorage.setItem(key, count);
-  document.getElementById("visitor-count").innerText = count;
-</script>
+  
 
 </footer>
 
@@ -594,16 +566,14 @@ window.onload = typeWriter;
 
 <!-- FOOTER PERSONALIZAT -->
 <footer style="background-color:#111; color:#fff; text-align:center; padding:20px; margin-top:60px; font-size:14px;">
-    <p><strong>Disclaimer:</strong> Acest site oferă sprijin educativ pentru renunțarea la pariuri. Nu oferim servicii medicale sau psihologice profesioniste.</p>
-    <p>&copy; 2025 Stop Pariuri. Toate drepturile rezervate.</p>
-
-<div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
+    
+<div style="text-align: center; font-weight: bold; font-size: 1rem; color: black; margin-top: 1rem;">
   Vizitatori azi: <span id="visitor-count">...</span>
 </div>
 
 <script>
   const startCount = 50;
-  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10); // pe zi
+  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10);
   let count = localStorage.getItem(key);
   if (!count) {
     count = startCount;
@@ -613,6 +583,12 @@ window.onload = typeWriter;
   localStorage.setItem(key, count);
   document.getElementById("visitor-count").innerText = count;
 </script>
+
+<p><strong>Disclaimer:</strong> Acest site oferă sprijin educativ pentru renunțarea la pariuri. Nu oferim servicii medicale sau psihologice profesioniste.</p>
+    <p>&copy; 2025 Stop Pariuri. Toate drepturile rezervate.</p>
+
+<div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
+  
 
 </footer>
 
