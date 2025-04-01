@@ -172,6 +172,39 @@
     background-color: #000000;
     color: white;
   }
+
+<style>
+  .responsive-stack > div {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  .responsive-stack > div:hover {
+    background-color: #111111;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+    border: 1px solid rgba(255, 165, 0, 0.2);
+  }
+
+  .responsive-stack button {
+    background: linear-gradient(135deg, #ff6600, #ff9933);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .responsive-stack button:hover {
+    background: linear-gradient(135deg, #ffa94d, #ff6600);
+    box-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
+    transform: scale(1.05);
+  }
+</style>
+
 </style>
 
 
@@ -307,7 +340,8 @@ html {
 
 
 <section id="pachete">
-  <h2>Pachete de consiliere</h2>
+  <h2>Alege drumul care te scoate din cerc. Alege pachetul potrivit.</h2>
+<p style="margin-top: 10px; font-size: 1rem; color: #ccc;">Fiecare pachet e un pas spre libertate. Alege-l pe cel care ți se potrivește și începe schimbarea.</p>
   <p>Consilierea este 100% confidențială și personalizată. Fiecare sesiune este gândită să te ajute să înțelegi cauza dependenței și cum să ieși din ea.</p>
 
   <div class="responsive-stack" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
