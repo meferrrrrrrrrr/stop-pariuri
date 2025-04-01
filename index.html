@@ -504,9 +504,7 @@ html {
 
 </main>
 
-  <footer>
-    © 2025 StopPariuri – Educație, Nu Iluzii
-  </footer>
+  
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -537,9 +535,7 @@ html {
 </section>
 
 <!-- ⚖️ Copyright -->
-<footer style="text-align: center; padding: 1em; background-color: #f1f1f1; font-size: 0.9rem; margin-top: 2em;">
-  © 2025 Stop Pariuri. Toate drepturile rezervate.
-</footer>
+
 
 
 <script>
@@ -635,6 +631,25 @@ window.onload = typeWriter;
       loader.style.display = "none";
     }
   });
+</script>
+
+
+<div style="text-align: center; font-weight: bold; font-size: 0.95rem; color: black; background-color: #f4f4f4; padding: 20px 10px; margin-top: 2rem;">
+  <p style="margin-bottom: 8px;">Vizitatori azi: <span id="visitor-count">...</span></p>
+  <p style="margin-bottom: 8px;">Disclaimer: Acest site oferă sprijin educativ pentru renunțarea la pariuri. Nu oferim servicii medicale sau psihologice profesioniste.</p>
+  <p style="margin: 0;">© 2025 Stop Pariuri. Toate drepturile rezervate.</p>
+</div>
+<script>
+  const base = 50;
+  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10);
+  let count = localStorage.getItem(key);
+  if (!count) {
+    count = base;
+  } else {
+    count = parseInt(count) + 1;
+  }
+  localStorage.setItem(key, count);
+  document.getElementById("visitor-count").textContent = count;
 </script>
 
 </body>
