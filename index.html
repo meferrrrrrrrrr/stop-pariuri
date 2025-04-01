@@ -504,68 +504,7 @@ html {
 
 </main>
 
-  <footer>
-    © 2025 StopPariuri – Educație, Nu Iluzii
   
-<div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
-  
-
-</footer>
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
-  </script>
-
-<!-- 🛡️ Disclaimer legal -->
-<section id="disclaimer" style="padding: 2em; background-color: #f9f9f9; border-top: 1px solid #ddd;">
-  <h2>📌 Notă legală</h2>
-  <p style="font-size: 1rem; line-height: 1.5;">
-    Acest site oferă sprijin și îndrumare educativă persoanelor care vor să se lase de pariuri. Nu este un serviciu medical sau psihologic profesionist. Informațiile de aici nu înlocuiesc sfatul unui specialist acreditat.
-  </p>
-</section>
-
-<!-- 📄 Termeni și condiții -->
-<section id="termeni" style="padding: 2em; background-color: #ffffff; border-top: 1px solid #ddd;">
-  <h2>📄 Termeni și condiții</h2>
-  <p style="font-size: 1rem; line-height: 1.5;">
-    Prin utilizarea acestui site, ești de acord că informațiile oferite sunt strict cu scop educativ și de conștientizare. Nu ne asumăm responsabilitatea pentru deciziile financiare sau personale ale utilizatorilor.
-  </p>
-</section>
-
-<!-- ⚖️ Copyright -->
-<footer style="text-align: center; padding: 1em; background-color: #f1f1f1; font-size: 0.9rem; margin-top: 2em;">
-  
-<div style="text-align: center; font-weight: bold; font-size: 1rem; color: black; margin-top: 1rem;">
-  Vizitatori azi: <span id="visitor-count">...</span>
-</div>
-
-<script>
-  const startCount = 50;
-  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10);
-  let count = localStorage.getItem(key);
-  if (!count) {
-    count = startCount;
-  } else {
-    count = parseInt(count) + 1;
-  }
-  localStorage.setItem(key, count);
-  document.getElementById("visitor-count").innerText = count;
-</script>
-
-© 2025 Stop Pariuri. Toate drepturile rezervate.
-
-<div style="text-align: center; font-size: 0.9rem; margin-top: 20px; color: #aaa;">
-  
-
-</footer>
 
 
 <script>
