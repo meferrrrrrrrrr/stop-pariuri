@@ -1,658 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <link rel="icon" type="image/png" href="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png">
-
-  <!-- Meta pentru SEO -->
-  <meta name="description" content="Stop Pariuri – Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc. O platformă reală, fără promisiuni false.">
-  <meta name="keywords" content="stop pariuri, adictie pariuri, consiliere jocuri, scapă de dependență, jocuri de noroc, superstop">
-  <meta name="author" content="SuperStop">
-
-  <!-- Meta Open Graph pentru Facebook/WhatsApp -->
-  <meta property="og:title" content="Stop Pariuri – Escape the matrix, be the change." />
-  <meta property="og:description" content="Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc." />
-  <meta property="og:image" content="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" />
-  <meta property="og:url" content="https://meferrrrrrrrrr.github.io/stop-pariuri/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Meta pentru Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-
-
-  <title>Stop Pariuri – Consiliere reală pentru cei care vor să iasă din joc</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <!-- Meta pentru SEO -->
-  <meta name="description" content="Stop Pariuri – Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc. O platformă reală, fără promisiuni false.">
-  <meta name="keywords" content="stop pariuri, adictie pariuri, consiliere jocuri, scapă de dependență, jocuri de noroc, superstop">
-  <meta name="author" content="SuperStop">
-
-  <!-- Meta Open Graph pentru Facebook/WhatsApp -->
-  <meta property="og:title" content="Stop Pariuri – Escape the matrix, be the change." />
-  <meta property="og:description" content="Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc." />
-  <meta property="og:image" content="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" />
-  <meta property="og:url" content="https://meferrrrrrrrrr.github.io/stop-pariuri/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Meta pentru Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta name="description" content="Platformă educativă și de consiliere reală pentru persoanele prinse în capcana pariurilor. Informații, sprijin, soluții.">
-  <meta name="keywords" content="pariuri, jocuri de noroc, dependență, consiliere, stop joc, cum mă las de pariuri, consiliere jocuri de noroc, ajutor real, stop pariuri">
-  <meta name="robots" content="index, follow">
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stop Pariuri – Realitate, nu iluzii</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <!-- Meta pentru SEO -->
-  <meta name="description" content="Stop Pariuri – Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc. O platformă reală, fără promisiuni false.">
-  <meta name="keywords" content="stop pariuri, adictie pariuri, consiliere jocuri, scapă de dependență, jocuri de noroc, superstop">
-  <meta name="author" content="SuperStop">
-
-  <!-- Meta Open Graph pentru Facebook/WhatsApp -->
-  <meta property="og:title" content="Stop Pariuri – Escape the matrix, be the change." />
-  <meta property="og:description" content="Consiliere sinceră pentru cei care vor să iasă din dependența de jocuri de noroc." />
-  <meta property="og:image" content="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" />
-  <meta property="og:url" content="https://meferrrrrrrrrr.github.io/stop-pariuri/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Meta pentru Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-
+  <title>MefCheck – Reality over Hype</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #1e3a8a;
-      --accent: #f97316;
-      --bg: #f1f5f9;
-      --text: #1e293b;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #1a1a1a;
     }
 
     header {
-      background-color: var(--primary);
-      color: white;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 36px;
-      margin-right: 10px;
-    }
-
-    ul.nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    ul.nav-links li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    ul.nav-links li a:hover {
-      color: var(--accent);
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #555;
     }
 
     main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
-    section {
-      margin-bottom: 3rem;
+    .input-section {
+      margin-top: 2rem;
+      text-align: center;
     }
 
-    h1, h2 {
-      color: var(--primary);
+    input[type="text"] {
+      width: 80%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #e2e8f0;
-      color: #334155;
+      padding: 2rem;
       font-size: 0.9rem;
+      color: #888;
     }
-  
-    
-    
-
-@media (max-width: 768px) {
-  nav {
-    overflow-x: auto;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    justify-content: flex-start;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .nav-links li {
-    flex: 0 0 auto;
-  }
-
-  .nav-links li a {
-    display: inline-block;
-    font-size: 0.85rem;
-    padding: 6px 10px;
-    white-space: nowrap;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-/* Secțiune Testimoniale */
-#testimoniale {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-#testimoniale h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #222;
-}
-.testimonial {
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  font-style: italic;
-  color: #444;
-  text-align: center;
-}
-.testimonial span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #222;
-}
-
-
-
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: white;
-  }
-
-<style>
-  .responsive-stack > div {
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-  }
-
-  .responsive-stack > div:hover {
-    background-color: #111111;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
-    border: 1px solid rgba(255, 165, 0, 0.2);
-  }
-
-  .responsive-stack button {
-    background: linear-gradient(135deg, #ff6600, #ff9933);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .responsive-stack button:hover {
-    background: linear-gradient(135deg, #ffa94d, #ff6600);
-    box-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
-    transform: scale(1.05);
-  }
-</style>
-
-</style>
-
-
-</style>
-
-<style>
-body {
-  background: linear-gradient(-45deg, #e0e0e0, #bde0fe, #e0e0e0, #ffffff);
-  background-size: 400% 400%;
-  animation: gradientBG 20s ease infinite;
-}
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-</style>
-
-
-<style>
-#typing-effect::after {
-  content: '|';
-  animation: blink 1s infinite;
-}
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-</style>
-
-
-<style>
-/* Efect hover pe butoanele de meniu */
-nav a {
-  transition: all 0.3s ease;
-  position: relative;
-}
-nav a:hover {
-  color: #d90429;
-  text-shadow: 0 0 5px rgba(217, 4, 41, 0.5);
-}
-
-/* Butoane cu efect de apasare */
-button, .btn {
-  background-color: #d90429;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
-button:hover, .btn:hover {
-  transform: scale(1.05);
-  background-color: #a70322;
-}
-button:active, .btn:active {
-  transform: scale(0.97);
-}
-</style>
-
-
-<style>
-html {
-  scroll-behavior: smooth;
-
-  scroll-behavior: smooth;
-}
-</style>
-
+  </style>
 </head>
 <body>
-
-<h1 id="typing-effect" style="color:#ffffff; background-color:#000; padding:40px 20px; text-align:center; font-size: 2rem; font-weight: bold; margin: 0;"></h1>
-
   <header>
-    <nav>
-      <div class="logo"><img src="https://meferrrrrrrrrr.github.io/stop-pariuri/logo.png" alt="SuperStop Logo" style="height: 36px; vertical-align: middle; margin-right: 10px;">Stop Pariuri</div>
-      <ul class="nav-links">
-        <li><a href="#acasa">Acasă</a></li>
-        <li><a href="#despre">ℹ️ Despre</a></li>
-        <li><a href="#resurse">📚 Resurse</a></li>
-        <li><a href="#consiliere">🧠 Consiliere</a></li>
-        <li><a href="#pachete">📦 Pachete</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
-      </ul>
-    </nav>
+    <h1>MefCheck</h1>
+    <p>Reality over Hype.</p>
   </header>
 
   <main>
-    <section id="acasa">
-      <h1>Ai ajuns unde trebuie.</h1>
-      <p>Nu e o platformă care îți promite câștiguri rapide. E o pagină sinceră. Un semnal de alarmă pentru cei care simt că jocurile de noroc le controlează viața.</p>
-      <p>Fie că ai pierdut bani, timp sau încredere în tine – aici nu te judecă nimeni.</p>
-      <a href="#despre" style="display:inline-block;margin-top:1rem;padding:0.5rem 1rem;background-color:#f97316;color:white;text-decoration:none;border-radius:4px;">Află mai multe</a>
-    </section>
-
-    <section id="despre">
-      <h2>Despre proiect</h2>
-      <p>Acest site este un semnal de alarmă pentru cei care cred că pot bate sistemul. Realitatea nu minte, dar promisiunile cazinourilor – da.</p>
-<p style="font-size: 1.1rem; font-weight: bold; color: #000000; max-width: 700px; margin: 20px auto 0; text-align: center;">„Când deschizi ochii, nu mai poți minți realitatea. Nici pe tine.”</p>
-    </section>
-  
-
-
-<section id="resurse">
-  <h2>Resurse & Strategii care dau iluzia câștigului</h2>
-  <p>Internetul e plin de strategii care promit profit sigur, dar realitatea bate promisiunea. Hai să vedem câteva exemple care pot păcăli:</p>
-
-  <h3>🎯 Arbitrage Betting (Sure Bets)</h3>
-  <p>Teoria: pariezi pe toate variantele posibile la cote diferite, astfel încât să ai profit indiferent de rezultat.<br>
-  Realitatea: Platformele detectează rapid această metodă, limitează conturile sau blochează câștigurile. Diferențele de cote dispar rapid. Risk enorm pentru un profit mic.</p>
-
-  <h3>🎲 Martingala la ruletă</h3>
-  <p>Teoria: Dublezi miza după fiecare pierdere ca să recuperezi tot și să ieși pe plus.<br>
-  Realitatea: După câteva pierderi consecutive riști să îți pierzi tot bugetul. Cazinourile au limite de pariere exact din acest motiv.</p>
-
-  <h3>📈 „Analiza” biletelor pe TikTok / YouTube</h3>
-  <p>Influenceri care pariază sume uriașe și câștigă „live” – dar nu arată niciodată toate pierderile. E doar marketing plătit de casele de pariuri.</p>
-
-  <p style="margin-top:1rem;">💡 <strong>Concluzie:</strong> Nicio strategie nu bate sistemul. Singura victorie reală e când alegi să te oprești.</p>
-</section>
-
-<section id="consiliere">
-  <h2>Consiliere și sprijin real</h2>
-  <p>Te-ai săturat să pierzi bani, timp și liniște sufletească? Nu ești singur.</p>
-  <p>Fie că ai nevoie de cineva care doar să te asculte, fie că vrei o strategie reală ca să te oprești, putem vorbi.</p>
-  <ul style="margin-left:1rem;">
-    <li>🔹 Îți arăt pașii practici prin care poți ieși din cercul vicios</li>
-    <li>🔹 Fără judecată. Fără promisiuni false. Doar adevăr și fapte</li>
-    <li>🔹 Ghidare 1-la-1 prin mesaje sau apel, dacă vrei</li>
-  </ul>
-  <p style="margin-top:1rem;">💬 Scrie-mi oricând pe <a href="https://wa.me/40754951373" target="_blank">WhatsApp</a> sau pe <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">Instagram</a>.</p>
-</section>
-
-
-<section id="pachete">
-  <h2>Alege drumul care te scoate din cerc. Alege pachetul potrivit.</h2>
-<p style="margin-top: 10px; font-size: 1rem; color: #000; font-weight: bold;">Fiecare pachet e un pas spre libertate. Alege-l pe cel care ți se potrivește și începe schimbarea.</p>
-  <p>Consilierea este 100% confidențială și personalizată. Fiecare sesiune este gândită să te ajute să înțelegi cauza dependenței și cum să ieși din ea.</p>
-
-  <div class="responsive-stack" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
-    <div style="flex: 1; min-width: 250px; background: #fef3c7; padding: 1rem; border-radius: 8px;">
-      <h3>🔹 1 ședință</h3>
-      <p>Explorăm situația ta și îți ofer un plan personalizat de primă etapă.</p>
-      <p><strong>Preț: 100 RON</strong></p>
+    <div class="input-section">
+      <h2>Verifică un subiect:</h2>
+      <input type="text" placeholder="Ex: Real Madrid azi, Bitcoin, TikTok Guru X" />
+      <br />
+      <button>Verifică cu MefCheck</button>
     </div>
 
-    <div style="flex: 1; min-width: 250px; background: #d1fae5; padding: 1rem; border-radius: 8px;">
-      <h3>🔸 Pachet 3 ședințe</h3>
-      <p>Ghidare continuă + suport între ședințe prin mesaje.</p>
-      <p><strong>Preț: 200 RON</strong></p>
-      <p><em>(Economisești 100 RON)</em></p>
+    <div class="result">
+      <h3>Rezultat:</h3>
+      <p><em>Ce spune lumea, ce nu se spune, ce e hype, ce e real.</em></p>
     </div>
+  </main>
 
-    <div style="flex: 1; min-width: 250px; background: #e0e7ff; padding: 1rem; border-radius: 8px;">
-      <h3>🔶 Pachet 5 ședințe</h3>
-      <p>Transformare completă: analizăm în profunzime, urmărim progresul și construim un plan de viață sănătos.</p>
-      <p><strong>Preț: 300 RON</strong></p>
-      <p><em>(Economisești 200 RON)</em></p>
-    </div>
-  </div>
-
-  <p style="margin-top: 2rem;">💬 Pentru programări, scrie-mi direct pe <a href="https://wa.me/40754951373" target="_blank">WhatsApp</a>.</p>
-</section>
-
-
-
-<section id="faq">
-  <h2>Întrebări frecvente</h2>
-
-  <details>
-    <summary><strong>🎯 Pot câștiga bani pe termen lung din pariuri?</strong></summary>
-    <p>👉 Realitatea dură:<br>
-    Pe termen lung, nu. Casele de pariuri au un avantaj matematic (margine) peste orice cotă.
-    Chiar și când ai o perioadă bună, te întorci cu mai puțin sau chiar pierzi tot.<br>
-    📉 95% dintre pariori ies în pierdere în mai puțin de 6 luni.</p>
-  </details>
-
-  <details>
-    <summary><strong>💡 Ce se întâmplă într-o ședință de consiliere?</strong></summary>
-    <p>👉 Fără terapii plictisitoare.<br>
-    Vorbim real, fără mască. Analizăm obiceiurile tale, gândirea legată de bani, emoțiile care te duc la pariat.
-    Facem un plan pe termen scurt și unul de resetare emoțională și financiară.</p>
-  </details>
-
-  <details>
-    <summary><strong>📞 E confidențial?</strong></summary>
-    <p>👉 100% da.<br>
-    Numele tău, povestea ta, toate rămân între noi. Nu lucrez cu baze de date, nu trimit nimănui nimic. Ești în siguranță.</p>
-  </details>
-
-  <details>
-    <summary><strong>📆 Cât durează o ședință?</strong></summary>
-    <p>👉 Între 30-45 de minute.<br>
-    Se face prin apel audio/video (WhatsApp) sau mesaje – tu alegi.<br>
-    Important e să te simți în largul tău și să simți progres real, nu să cronometrezi timpul.</p>
-  </details>
-</section>
-
-
-<section id="contact">
-
-  <h2>📞 Contact</h2>
-  <p>Dacă ai nevoie de ajutor sau vrei să vorbim direct, mă poți contacta oricând:</p>
-  <ul style="list-style: none; padding-left: 0;">
-    <li>📱 Telefon / WhatsApp: <a href="https://wa.me/40754951373" target="_blank">+40 754 951 373</a></li>
-    <li>📸 Instagram: <a href="https://instagram.com/meferrrrrrrrrr" target="_blank">@meferrrrrrrrrr</a></li>
-  </ul>
-</section>
-
-  
-<section id="testimoniale" style="padding: 40px 20px; background-color: #f9f9f9;">
-  <h2 style="text-align: center; margin-bottom: 30px;">Ce spun oamenii</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Nu credeam că pot scăpa de pariuri. Acum mă simt liber. Mulțumesc pentru tot sprijinul!”</p>
-      <p style="text-align: right; font-weight: bold;">– Andrei</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Mi-ați deschis ochii! N-am mai pus niciun bilet de 3 luni. Viața mea s-a schimbat.”</p>
-      <p style="text-align: right; font-weight: bold;">– Mihai</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Ajutor real. Fără promisiuni false. Doar fapte. Recomand din inimă!”</p>
-      <p style="text-align: right; font-weight: bold;">– Cristina</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„E prima dată când cineva chiar înțelege ce simt și nu mă judecă.”</p>
-      <p style="text-align: right; font-weight: bold;">– Raul</p>
-    </div>
-    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 300px;">
-      <p style="font-style: italic;">„Site-ul ăsta m-a ajutat mai mult decât orice altceva. Mulțumesc!”</p>
-      <p style="text-align: right; font-weight: bold;">– Elena</p>
-    </div>
-  </div>
-</section>
-
-
-<section id="share" style="text-align:center; margin-top:40px;">
-  <p style="font-size:1.1rem; margin-bottom:10px;">🔗 Trimite acest site unui prieten care are nevoie:</p>
-  <a href="https://wa.me/?text=Intră%20pe%20https%3A%2F%2Fmeferrrrrrrrrr.github.io%2Fstop-pariuri%20%E2%80%93%20un%20site%20real%20care%20te%20ajut%C4%83%20s%C4%83%20te%20opre%C8%99ti%20din%20pariuri." target="_blank" style="display:inline-block; background-color:#25D366; color:white; padding:10px 20px; border-radius:5px; font-weight:bold; text-decoration:none;">
-    📤 Distribuie pe WhatsApp
-  </a>
-</section>
-
-</main>
-
-  
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
-  </script>
-
-<!-- 🛡️ Disclaimer legal -->
-<section id="disclaimer" style="padding: 2em; background-color: #f9f9f9; border-top: 1px solid #ddd;">
-  <h2>📌 Notă legală</h2>
-  <p style="font-size: 1rem; line-height: 1.5;">
-    Acest site oferă sprijin și îndrumare educativă persoanelor care vor să se lase de pariuri. Nu este un serviciu medical sau psihologic profesionist. Informațiile de aici nu înlocuiesc sfatul unui specialist acreditat.
-  </p>
-</section>
-
-<!-- 📄 Termeni și condiții -->
-<section id="termeni" style="padding: 2em; background-color: #ffffff; border-top: 1px solid #ddd;">
-  <h2>📄 Termeni și condiții</h2>
-  <p style="font-size: 1rem; line-height: 1.5;">
-    Prin utilizarea acestui site, ești de acord că informațiile oferite sunt strict cu scop educativ și de conștientizare. Nu ne asumăm responsabilitatea pentru deciziile financiare sau personale ale utilizatorilor.
-  </p>
-</section>
-
-<!-- ⚖️ Copyright -->
-
-
-
-<script>
-const text = "Stop Pariuri - Escape the matrix, be the change.";
-let i = 0;
-function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("typing-effect").innerHTML = text.substring(0, i + 1);
-    i++;
-    setTimeout(typeWriter, 70);
-  }
-}
-window.onload = typeWriter;
-</script>
-
-
-<!-- FOOTER PERSONALIZAT -->
-<footer style="background-color:#111; color:#fff; text-align:center; padding:20px; margin-top:60px; font-size:14px;">
-    <p><strong>Disclaimer:</strong> Acest site oferă sprijin educativ pentru renunțarea la pariuri. Nu oferim servicii medicale sau psihologice profesioniste.</p>
-    <p>&copy; 2025 Stop Pariuri. Toate drepturile rezervate.</p>
-</footer>
-
-
-<!-- BACK TO TOP BUTTON -->
-<button onclick="scrollToTop()" id="backToTopBtn" title="Înapoi sus">⬆️</button>
-<style>
-  #backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    background-color: #d62828;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  #backToTopBtn:hover {
-    background-color: #b71c1c;
-  }
-</style>
-<script>
-  const btn = document.getElementById("backToTopBtn");
-  window.onscroll = () => {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-</script>
-
-
-<!-- LOADER LA INTRAREA PE SITE -->
-<style>
-  #loader-wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .loader {
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #d62828;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-</style>
-<div id="loader-wrapper"><div class="loader"></div></div>
-<script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("loader-wrapper");
-    if (loader) {
-      loader.style.display = "none";
-    }
-  });
-</script>
-
-
-
-
-
-<div style="text-align: center; font-weight: bold; font-size: 0.95rem; color: black; background-color: #f4f4f4; padding: 20px 10px; margin-top: 2rem;">
-  <p style="margin-bottom: 8px;">Vizitatori azi: <span id="visitor-count">...</span></p>
-  
-</div>
-<script>
-  const base = 50;
-  const key = "superstop_visits_" + new Date().toISOString().slice(0, 10);
-  let count = localStorage.getItem(key);
-  if (!count) {
-    count = base;
-  } else {
-    count = parseInt(count) + 1;
-  }
-  localStorage.setItem(key, count);
-  document.getElementById("visitor-count").textContent = count;
-</script>
-
+  <footer>
+    Salvează analiza ta.<br />
+    Întoarce-te zilnic pentru un reality check nou.
+  </footer>
 </body>
 </html>
